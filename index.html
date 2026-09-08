@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Лабораторная работа №1 — Вариант 9</title>
+        <style>
+            body {
+                background: #1a1a2e;
+                color: #e8e8e8;
+                font-family: sans-serif;
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 0 15px;
+                display: grid;
+                grid-template-columns: 1fr 250px;
+                gap: 20px;
+            }
+
+            header,footer {
+                grid-column: span 2;
+            }
+
+            header,footer,aside,img {
+                background: #161233;
+                border-radius: 8px;
+            }
+            header,footer,aside {
+                padding: 15px;
+            }
+            h1,h2,h3 {
+                color: #a29bfe;
+            }
+            input,textarea,button {
+                border-radius: 6px;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Сатонин Александр</h1>
+            <p>Студент, Музыкант и Звукорежиссёр</p>
+        </header>
+
+        <main>
+            <img
+                src="https://www.nashe.ru/storage/2583/conversions/gene-simmons-large.jpg"
+                alt="Портрет Сатонина Александра"
+                width="100%"
+                height="auto"
+            />
+
+            <section>
+                <h2>Музыкальные и технические навыки</h2>
+                <ul>
+                    <li>Игра на электрогитаре и клавишных инструментах</li>
+                    <li>Работа в программах для записи звука: Reaper, Logic Pro</li>
+                    <li>Сведение многотрековых аудиозаписей и мастеринг</li>
+                    <li>Настройка студийного оборудования и микрофонов</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Музыкальные проекты</h2>
+                <ol>
+                    <li>Собственный mini-альбом в жанре инструментальный прогрессив-рок.</li>
+                    <li>Кавер-версия известного трека с полной переработкой аранжировки.</li>
+                    <li>Сведение и чистка звука для подкаста локального блогера.</li>
+                    <li>Создание звуковых эффектов для мобильной игры.</li>
+                </ol>
+            </section>
+
+            <form action="#" method="POST">
+                <h2>Связаться со мной</h2>
+                <p>
+                    <label
+                        >Имя:<br />
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Введите ваше имя"
+                        />
+                    </label>
+                </p>
+                <p>
+                    <label
+                        >Email:<br />
+                        <input
+                            type="email"
+                            name="useremail"
+                            placeholder="example@mail.com"
+                        />
+                    </label>
+                </p>
+                <p>
+                    <label
+                        >Сообщение:<br />
+                        <textarea
+                            name="usermessage"
+                            placeholder="Текст вашего сообщения..."
+                        ></textarea>
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Отправить</button>
+                </p>
+            </form>
+        </main>
+
+        <aside>
+            <h3>Любимый инструмент и жанры</h3>
+            <p>
+                <strong>Инструмент:</strong> Синтезатор и полуакустическая гитара.
+            </p>
+            <p>
+                <strong>Жанр:</strong> Рок, Synthwave, Эмбиент.
+            </p>
+        </aside>
+        <footer>
+            <p>&copy; 2026 Сатонин Александр. Все права защищены.</p>
+        </footer>
+    </body>
+</html>
