@@ -48,15 +48,19 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
-.image {
+figure, .image {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
-.image img {
+figure img {
     display: block;
+    width: 100%;
 }
 
 textarea {
