@@ -1,179 +1,193 @@
 :root {
-    --bg-main: #0d0b18;
-    --bg-card: #161233;
-    --text-primary: #f5f5fa;
-    --text-muted: #b3b0cd;
-    --color-accent: #a29bfe;
-    --color-wave: #81ecec;
-    --color-wave-hover: #e84393;
-    --font-stack: sans-serif;
+    --bg-color: #121214;
+    --surface-color: #1e1e24;
+    --text-color: #f1f1f3;
+    --text-muted: #a0a0a5;
+    --accent-color: #1db954;
+    --accent-hover: #1ed760;
+    --border-radius: 8px;
 }
 
 body {
-    background: var(--bg-main);
-    color: var(--text-primary);
-    font-family: var(--font-stack);
-    margin: 0;
-    padding: 20px 0;
-}
-
-.page-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: grid;
-    grid-template-columns: 1fr 250px;
-    gap: 20px;
-    position: static;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-header, footer {
-    grid-column: span 2;
-}
-
-header, footer, aside, section, form {
-    background: var(--bg-card);
-    border-radius: 8px;
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    color: var(--color-accent);
-    margin-top: 0;
-}
-
-figure, .image {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-}
-
-figure img {
-    display: block;
-    width: 100%;
-}
-
-textarea {
-    resize: vertical;
-}
-
-input, textarea, button {
-    background: #201b47;
-    border: 1px solid #3b357a;
-    color: var(--text-primary);
-    border-radius: 6px;
-    padding: 10px;
-    font-family: var(--font-stack);
-    width: 100%;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-input:focus, textarea:focus {
-    outline: 2px solid var(--color-accent);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-button {
-    background: var(--color-accent);
-    color: var(--bg-main);
+header {
+    background-color: var(--surface-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 10px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-/* Класс ссылок */
-.link {
-    color: var(--color-accent);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
-.link:hover {
-    text-decoration: underline;
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
 
-.link:visited {
-    color: #59a7ab;
+.nav-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* Секция навыков */
-.skills {
-    padding-left: 20px;
+main {
+    padding: 40px 0;
 }
 
-.skill-item {
-    list-style-position: inside;
-    margin-bottom: 15px;
-    color: var(--text-primary);
+section {
+    margin-bottom: 60px;
 }
 
-/* Секция проектов */
-.projects {
-    padding-left: 20px;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-left: 15px;
 }
 
-.project-item {
-    list-style-position: inside;
-    margin-bottom: 15px;
-    color: var(--text-primary);
+.releases-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.release-card {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-release {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.release-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.release-type {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.release-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.release-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.project-text {
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
+.equipment-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.project-text::before,
-.project-text::after {
-    content: "~";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-wave);
-    font-size: 14px;
-    letter-spacing: -2px;
-    transition: color 0.3s ease;
+.eq-item {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
 }
 
-.project-text::before {
-    left: 0;
+.eq-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
-.project-text::after {
-    right: 0;
+.eq-info {
+    padding: 20px;
 }
 
-/* Изменение цвета волн при :hover (Задание) */
-.project-item:hover .project-text::before,
-.project-item:hover .project-text::after {
-    color: var(--color-wave-hover);
+.eq-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-/* Добавление анимации дрожания shake при :hover (Задание) */
-.project-item:hover .project-text::before,
-.project-item:hover .project-text::after {
-    animation: shake 0.3s infinite linear;
+.eq-purpose {
+    font-size: 0.95rem;
+    color: var(--text-muted);
 }
 
-/* Описание анимации дрожания */
-@keyframes shake {
-    0% { transform: translateY(-50%) translateX(0); }
-    25% { transform: translateY(-53%) translateX(-1px); }
-    50% { transform: translateY(-50%) translateX(1px); }
-    75% { transform: translateY(-47%) translateX(-1px); }
-    100% { transform: translateY(-50%) translateX(0); }
+footer {
+    background-color: var(--surface-color);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* Планшеты (до 992px) */
+@media (max-width: 992px) {
+    .release-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобильные устройства (до 576px) */
+@media (max-width: 576px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .release-card {
+        flex: 1 1 100%;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
 }

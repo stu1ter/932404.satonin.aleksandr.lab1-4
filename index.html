@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Лабораторная работа №2 — Вариант 9</title>
-        <link rel="stylesheet" href="style.css" />
-
-        <style>
-            .skills {
-                list-style-type: disclosure-closed;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="page-container">
-            <header>
-                <h1>Сатонин Александр</h1>
-                <p>Студент, Музыкант и Звукорежиссёр</p>
-            </header>
-
-            <main>
-                <figure class="image">
-                    <img
-                        src="https://www.nashe.ru/storage/2583/conversions/gene-simmons-large.jpg"
-                        alt="Портрет Сатонина Александра"
-                        width="100%"
-                        height="auto"
-                    />
-                    <figcaption style="font-style: italic; color: #a29bfe; margin-top: 8px;">
-                        За работой в студии
-                    </figcaption>
-                </figure>
-
-                <section>
-                    <h2>Музыкальные и технические навыки</h2>
-                    <ul class="skills">
-                        <li class="skill-item">Игра на электрогитаре и клавишных инструментах</li>
-                        <li class="skill-item">Работа в программах для записи звука: Reaper, Logic Pro</li>
-                        <li class="skill-item">Сведение многотрековых аудиозаписей и мастеринг</li>
-                        <li class="skill-item">Настройка студийного оборудования и микрофонов</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Музыкальные проекты</h2>
-                    <ol class="projects">
-                        <li class="project-item"><span class="project-text">Собственный mini-альбом в жанре инструментальный прогрессив-рок.</span></li>
-                        <li class="project-item"><span class="project-text">Кавер-версия известного трека с полной переработкой аранжировки.</span></li>
-                        <li class="project-item"><span class="project-text">Сведение и чистка звука для подкаста локального блогера.</span></li>
-                        <li class="project-item"><span class="project-text">Создание звуковых эффектов для мобильной игры.</span></li>
-                    </ol>
-                </section>
-
-                <section>
-                    <form action="#" onsubmit="return false;" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-                        <h2>Связаться со мной</h2>
-                        <p>
-                            <label>Имя:<br />
-                                <input type="text" name="username" placeholder="Введите ваше имя" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>Email:<br />
-                                <input type="email" name="useremail" placeholder="example@mail.com" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>Сообщение:<br />
-                                <textarea name="usermessage" placeholder="Текст вашего сообщения..."></textarea>
-                            </label>
-                        </p>
-                        <p>
-                            <button>Отправить</button>
-                        </p>
-                    </form>
-                </section>
-            </main>
-
-            <aside>
-                <h3>Любимый инструмент и жанры</h3>
-                <p>
-                    <strong>Инструмент:</strong> Синтезатор и полуакустическая гитара.
-                </p>
-                <p>
-                    <strong>Жанр:</strong> <a href="https://rock.com/" class="link">Рок</a>, <a href="https://jazz.com/" class="link">Synthwave</a>, <a href="#" class="link">Эмбиент</a>.
-                </p>
-            </aside>
-
-            <footer>
-                <p>&copy; 2026 Сатонин Александр. Все права защищены.</p>
-            </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №3 — Вариант 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-div">
+            <a href="#" class="logo">Релизы и оборудование </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#releases">Релизы</a></li>
+                    <li><a href="#equipment">Оборудование</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
+
+    <main class="container">
+        <section id="releases">
+            <h2>Мои релизы</h2>
+            <div class="releases-div">
+                <article class="release-card">
+                    <img class="img-release" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIxQ_P2hUGNtdknDxchlCOBrc9EEuTYI7_5xNWVJQQAdYmiApeWWmfmUrM&s=10" alt="Обложка релиза">
+                    <div class="release-info">
+                        <span class="release-type">АЛЬБОМ</span>
+                        <h3 class="release-title">Infancy</h3>
+                        <div class="release-meta">
+                            <span>Жанр: Ambient / Electronic</span>
+                            <time datetime="2026">2026 г.</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="release-card">
+                    <img class="img-release" src="https://avatars.yandex.net/get-music-content/18132539/934b9e3f.a.41541711-1/300x300" alt="Обложка релиза">
+                    <div class="release-info">
+                        <span class="release-type">СИНГЛ</span>
+                        <h3 class="release-title">Noir</h3>
+                        <div class="release-meta">
+                            <span>Жанр: Jazz</span>
+                            <time datetime="2025">2025 г.</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="release-card">
+                    <img class="img-release" src="https://avatars.yandex.net/get-music-content/20113429/bced089f.a.42565367-2/300x300" alt="Обложка релиза">
+                    <div class="release-info">
+                        <span class="release-type">СИНГЛ</span>
+                        <h3 class="release-title">Stay For A While</h3>
+                        <div class="release-meta">
+                            <span>Жанр: Techno</span>
+                            <time datetime="2025">2025 г.</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="release-card">
+                    <img class="img-release" src="https://avatars.yandex.net/get-music-content/15406468/a833e47a.a.35654-9/300x300" alt="Обложка релиза">
+                    <div class="release-info">
+                        <span class="release-type">АЛЬБОМ</span>
+                        <h3 class="release-title">Discovery</h3>
+                        <div class="release-meta">
+                            <span>Жанр: Lo-Fi / Chillhop</span>
+                            <time datetime="2024">2024 г.</time>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="equipment">
+            <h2>Студийное оборудование</h2>
+            <div class="equipment-div">
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://www.allfordj.ru/upload/iblock/6ae/3reqwez0h2xx1jzzstzklwtts6sxyu9r/universal_audio_apollo_x8p_heritage_edition_2.jpg" alt="apollo x8p">
+                    <div class="eq-info">
+                        <h3 class="eq-title">Universal Audio Apollo x8p</h3>
+                        <p class="eq-purpose">Аудиоинтерфейс. Предусиление звука, АЦП/ЦАП конвертация студийного уровня и обработка плагинов в реальном времени.</p>
+                    </div>
+                </div>
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_OIU9XsvT5J3XmN9bnhcxknwETDHNPKFnoOZmj1QurM3wXwYH233Wy4&s=10" alt="Neumann U 87 Ai" >
+                    <div class="eq-info">
+                        <h3 class="eq-title">Neumann U 87 Ai</h3>
+                        <p class="eq-purpose">Студийный конденсаторный микрофон. Запись вокала, акустических инструментов с максимальной детализацией.</p>
+                    </div>
+                </div>
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVZJvAAA84UYGMJmJ6-NGfg2ANJu_2SIdj-cIzpvzxw&s=10" alt="Genelec 8341A SAM">
+                    <div class="eq-info">
+                        <h3 class="eq-title">Genelec 8341A SAM</h3>
+                        <p class="eq-purpose">Студийные мониторы (коаксиальные). Точный акустический контроль, сведение и мастеринг треков без искажений.</p>
+                    </div>
+                </div>
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSClc_QqR7O4nA3kFFbNyEMXgIKaDVkYt1H4jqrZMSGg&s=10" alt="Moog Matriarch">
+                    <div class="eq-info">
+                        <h3 class="eq-title">Moog Matriarch</h3>
+                        <p class="eq-purpose">Аналоговый синтезатор. Создание плотных басовых линий, лидов и уникальных модульных текстур.</p>
+                    </div>
+                </div>
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTau3B9oVBeAg8NtFBq-lz1tAvwBbQBmqdA_qPomfBr9Q&s=10" alt="SSL Fusion">
+                    <div class="eq-info">
+                        <h3 class="eq-title">SSL Fusion</h3>
+                        <p class="eq-purpose">Аналоговый мастер-процессор. Финальный окрас микса, добавление аналогового характера, сатурации и ширины.</p>
+                    </div>
+                </div>
+
+                <div class="eq-item">
+                    <img class="eq-image" src="https://audiohead.ru/upload/iblock/93a/93a15bc60b90da6491fc95d1bf1b4807.jpg" alt="Sennheiser HD 600">
+                    <div class="eq-info">
+                        <h3 class="eq-title">Sennheiser HD 600</h3>
+                        <p class="eq-purpose">Открытые наушники. Детальный мониторинг частот, проверка панорамы и пространственных эффектов при работе ночью.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026. Лабораторная работа Сатонина Александра.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
