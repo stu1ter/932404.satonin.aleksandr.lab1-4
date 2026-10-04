@@ -23,10 +23,8 @@
                     <img
                         src="https://www.nashe.ru/storage/2583/conversions/gene-simmons-large.jpg"
                         alt="Портрет Сатонина Александра"
-                        width="100%"
-                        height="auto"
                     />
-                    <figcaption style="font-style: italic; color: #a29bfe; margin-top: 8px;">
+                    <figcaption>
                         За работой в студии
                     </figcaption>
                 </figure>
@@ -52,38 +50,32 @@
                 </section>
 
                 <section>
-                    <form action="#" onsubmit="return false;" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-                        <h2>Связаться со мной</h2>
-                        <p>
-                            <label>Имя:<br />
-                                <input type="text" name="username" placeholder="Введите ваше имя" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>Email:<br />
-                                <input type="email" name="useremail" placeholder="example@mail.com" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>Сообщение:<br />
-                                <textarea name="usermessage" placeholder="Текст вашего сообщения..."></textarea>
-                            </label>
-                        </p>
-                        <p>
-                            <button>Отправить</button>
-                        </p>
+                    <h2>Связаться со мной</h2>
+                    <form action="#" method="post" style="display: flex;">
+                        <label>
+                            Имя:
+                            <input type="text" name="username" required>
+                        </label>
+
+                        <label>
+                            Email:
+                            <input type="email" name="email" required>
+                        </label>
+
+                        <label>
+                            Сообщение:
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+
+                        <button type="submit">Отправить</button>
                     </form>
                 </section>
             </main>
 
             <aside>
                 <h3>Любимый инструмент и жанры</h3>
-                <p>
-                    <strong>Инструмент:</strong> Синтезатор и полуакустическая гитара.
-                </p>
-                <p>
-                    <strong>Жанр:</strong> <a href="https://rock.com/" class="link">Рок</a>, <a href="https://jazz.com/" class="link">Synthwave</a>, <a href="#" class="link">Эмбиент</a>.
-                </p>
+                <p><strong>Инструмент:</strong> Синтезатор и полуакустическая гитара.</p>
+                <p><strong>Жанр:</strong> Рок, Synthwave, Эмбиент.</p>
             </aside>
 
             <footer>

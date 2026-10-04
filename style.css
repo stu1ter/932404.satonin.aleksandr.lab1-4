@@ -63,6 +63,23 @@ figure img {
     width: 100%;
 }
 
+figcaption {
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+form {
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 textarea {
     resize: vertical;
 }
@@ -108,28 +125,17 @@ button:active {
     color: #59a7ab;
 }
 
-/* Секция навыков */
-.skills {
-    padding-left: 20px;
-}
-
-.skill-item {
-    list-style-position: inside;
-    margin-bottom: 15px;
-    color: var(--text-primary);
-}
-
-/* Секция проектов */
+.skills,
 .projects {
     padding-left: 20px;
 }
 
+.skill-item,
 .project-item {
     list-style-position: inside;
     margin-bottom: 15px;
     color: var(--text-primary);
 }
-
 
 .project-text {
     position: relative;
@@ -157,15 +163,9 @@ button:active {
     right: 0;
 }
 
-/* Изменение цвета волн при :hover (Задание) */
 .project-item:hover .project-text::before,
 .project-item:hover .project-text::after {
     color: var(--color-wave-hover);
-}
-
-/* Добавление анимации дрожания shake при :hover (Задание) */
-.project-item:hover .project-text::before,
-.project-item:hover .project-text::after {
     animation: shake 0.3s infinite linear;
 }
 
