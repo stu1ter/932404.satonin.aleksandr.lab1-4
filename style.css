@@ -172,9 +172,49 @@ h2 {
     color: var(--text-muted);
 }
 
+.contacts-wrapper {
+    background-color: var(--surface-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts-wrapper strong {
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.contacts-wrapper p {
+    margin: 0;
+}
+
+.contacts-wrapper a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contacts-wrapper a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
 footer {
     background-color: var(--surface-color);
     padding: 20px 0;
+    margin-top: 40px;
     text-align: center;
     color: var(--text-muted);
 }
@@ -182,7 +222,7 @@ footer {
 /* Планшеты (до 992px) */
 @media (max-width: 992px) {
     .release-card {
-        flex: 0 0 calc((100%-20px) / 2);
+        flex: 0 0 calc((100% - 20px) / 2);
     }
     .equipment-div {
         grid-template-columns: repeat(2, 1fr);
@@ -208,5 +248,9 @@ footer {
 
     .equipment-div {
         grid-template-columns: 1fr;
+    }
+
+    .contacts-wrapper {
+        padding: 20px;
     }
 }
