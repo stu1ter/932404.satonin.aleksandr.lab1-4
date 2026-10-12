@@ -129,17 +129,35 @@
             </div>
         </section>
 
-        <section id="contacts" class="container">
+        <section id="contacts">
             <h2>Контакты</h2>
             <div class="contacts-wrapper">
-                <div class="contacts-info">
-                    <p class="contacts-description">Оставьте заявку, задайте вопрос или предложите сотрудничество — мы ответим вам в течение дня.</p>
-                    <ul class="contacts-list">
-                        <li><strong>Email:</strong> <a href="mailto:info@example.com">ssatonin@ya.com</a></li>
-                        <li><strong>Телефон:</strong> <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-                        <li><strong>Адрес:</strong> г. Томск, ул. Музыкальная, д. 10</li>
-                    </ul>
-                </div>
+                <p>Оставьте заявку, задайте вопрос или предложите сотрудничество — мы ответим вам в течение дня.</p>
+
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:ssatonin@ya.com">ssatonin@ya.com</a></li>
+                    <li><strong>Телефон:</strong> <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    <li><strong>Адрес:</strong> г. Томск, ул. Музыкальная, д. 10</li>
+                </ul>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="user-name">Имя</label>
+                        <input type="text" id="user-name" name="name" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-message">Сообщение</label>
+                        <textarea id="user-message" name="message" rows="5" placeholder="Текст вашего сообщения..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
